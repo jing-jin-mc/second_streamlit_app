@@ -14,7 +14,7 @@ my_catalog = my_cur.fetchall()
 
 # put the data into a dataframe and visulize it 
 df = pd.DataFrame(my_catalog)
-streamlit.write(df)
+streamlit.write('We have ' + len(df) + ' colors to choose!')
 
 # get a color list and put it into a select box
 color_list = df[0].values.tolist()
